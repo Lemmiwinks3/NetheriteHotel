@@ -22,5 +22,20 @@ public class Pago {
 		this.nomPago = nomPago;
 	}
 	
+	//TOSTRING
+	
+	@Override
+	public String toString() {
+		return "Pago [idPago=" + idPago + ", nomPago=" + nomPago + "]";
+	}
+	
+	//CONSTRUCTOR
+	
+	public Pago(String idPago, String nomPago) {
+		super();
+		this.idPago = idPago;
+		this.nomPago = nomPago;
+	}
+	
 	
 }

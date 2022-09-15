@@ -36,4 +36,22 @@ public class Servicio {
 		this.descripServ = descripServ;
 	}
 	
+	//TOSTRING
+	
+	@Override
+	public String toString() {
+		return "Servicio [idServ=" + idServ + ", nomServ=" + nomServ + ", precServ=" + precServ + ", descripServ="
+				+ descripServ + "]";
+	}
+	
+	//CONSTRUCTOR
+	
+	public Servicio(String idServ, String nomServ, double precServ, String descripServ) {
+		super();
+		this.idServ = idServ;
+		this.nomServ = nomServ;
+		this.precServ = precServ;
+		this.descripServ = descripServ;
+	}
+	
 }

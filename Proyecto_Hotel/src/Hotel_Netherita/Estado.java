@@ -20,11 +20,18 @@ public class Estado extends Habitacion{
 	public void setNomEst(String nomEst) {
 		this.nomEst = nomEst;
 	}
+	//TOSTRING
+	@Override
+	public String toString() {
+		return "Estado [idEst=" + idEst + ", nomEst=" + nomEst + "]";
+	}
 	
 	//CONSTRUCTOR
 	
+
 	public Estado(String idHabi, int numHabi, String idCateg, String idPiso, String idEst) {
 		super(idHabi, numHabi, idCateg, idPiso, idEst);
 		// TODO Auto-generated constructor stub
 	}
+
 }

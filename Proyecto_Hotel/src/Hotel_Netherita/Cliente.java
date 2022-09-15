@@ -8,21 +8,20 @@ public class Cliente {
 	private String nomClie;
 	private String apelPatClie;
 	private String apelMatClie;
-	private String codRol;
 	private String emailClie;
 	private int telefClie;
-	private String passwordClie;
 	
 	//GETTER & SETTER
 	
+	
+	public String getNomClie() {
+		return nomClie;
+	}
 	public int getDniClie() {
 		return dniClie;
 	}
 	public void setDniClie(int dniClie) {
 		this.dniClie = dniClie;
-	}
-	public String getNomClie() {
-		return nomClie;
 	}
 	public void setNomClie(String nomClie) {
 		this.nomClie = nomClie;
@@ -39,12 +38,6 @@ public class Cliente {
 	public void setApelMatClie(String apelMatClie) {
 		this.apelMatClie = apelMatClie;
 	}
-	public String getCodRol() {
-		return codRol;
-	}
-	public void setCodRol(String codRol) {
-		this.codRol = codRol;
-	}
 	public String getEmailClie() {
 		return emailClie;
 	}
@@ -57,12 +50,25 @@ public class Cliente {
 	public void setTelefClie(int telefClie) {
 		this.telefClie = telefClie;
 	}
-	public String getPasswordClie() {
-		return passwordClie;
-	}
-	public void setPasswordClie(String passwordClie) {
-		this.passwordClie = passwordClie;
+	//TOSTRING
+	
+	@Override
+	public String toString() {
+		return "Cliente [dniClie=" + dniClie + ", nomClie=" + nomClie + ", apelPatClie=" + apelPatClie
+				+ ", apelMatClie=" + apelMatClie  + ", emailClie=" + emailClie + ", telefClie="
+				+ telefClie + "]";
 	}
 	
+	//CONSTRUCTOR
 	
+	public Cliente(int dniClie, String nomClie, String apelPatClie, String apelMatClie, String emailClie,
+			int telefClie) {
+		super();
+		this.dniClie = dniClie;
+		this.nomClie = nomClie;
+		this.apelPatClie = apelPatClie;
+		this.apelMatClie = apelMatClie;
+		this.emailClie = emailClie;
+		this.telefClie = telefClie;
+	}
 }

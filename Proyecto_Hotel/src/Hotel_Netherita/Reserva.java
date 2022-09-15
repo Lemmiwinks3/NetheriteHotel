@@ -50,5 +50,23 @@ public class Reserva {
 		this.descripReser = descripReser;
 	}
 	
+	//TOSTRING
 	
+	@Override
+	public String toString() {
+		return "Reserva [dniClie=" + dniClie + ", dniEncar=" + dniEncar + ", idCateg=" + idCateg + ", idServ=" + idServ
+				+ ", fechReser=" + fechReser + ", descripReser=" + descripReser + "]";
+	}
+	
+	//CONSTRUCTOR
+	
+	public Reserva(int dniClie, int dniEncar, String idCateg, String idServ, String fechReser, String descripReser) {
+		super();
+		this.dniClie = dniClie;
+		this.dniEncar = dniEncar;
+		this.idCateg = idCateg;
+		this.idServ = idServ;
+		this.fechReser = fechReser;
+		this.descripReser = descripReser;
+	}
 }

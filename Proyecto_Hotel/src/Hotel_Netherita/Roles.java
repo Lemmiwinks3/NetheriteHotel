@@ -22,4 +22,19 @@ public class Roles {
 		this.nomRol = nomRol;
 	}
 	
+	//TOSTRING
+	
+	@Override
+	public String toString() {
+		return "Roles [codRoles=" + codRoles + ", nomRol=" + nomRol + "]";
+	}
+	
+	//CONSTRUCTOR
+	
+	public Roles(String codRoles, String nomRol) {
+		super();
+		this.codRoles = codRoles;
+		this.nomRol = nomRol;
+	}
+	
 }

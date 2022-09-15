@@ -32,5 +32,22 @@ public class Menu {
 		this.nomMenu = nomMenu;
 	}
 	
+	//TOSTRING
+	
+	@Override
+	public String toString() {
+		return "Menu [idMenu=" + idMenu + ", nomMenu=" + nomMenu + ", submenu=" + submenu + ", getSubmenu()="
+				+ getSubmenu() + ", getIdMenu()=" + getIdMenu() + ", getNomMenu()=" + getNomMenu() + ", getClass()="
+				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	}
+	
+	//CONSTRUCTOR
+	
+	public Menu(String idMenu, String nomMenu, List<SubMenu> submenu) {
+		super();
+		this.idMenu = idMenu;
+		this.nomMenu = nomMenu;
+		this.submenu = submenu;
+	}
 	
 }

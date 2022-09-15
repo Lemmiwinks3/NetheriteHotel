@@ -51,7 +51,16 @@ public class Habitacion {
 		this.numHabi = numHabi;
 		this.idCateg = idCateg;
 		this.idPiso = idPiso;
-		this.idEst = idEst;
+		this.idEst = idEst;	
+	}
+	
+	//TOSTRING
+	
+	@Override
+	public String toString() {
+		return "Habitacion [idHabi=" + idHabi + ", numHabi=" + numHabi + ", idCateg=" + idCateg + ", idPiso=" + idPiso
+				+ ", idEst=" + idEst + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
 	}
 	
 	

@@ -35,5 +35,22 @@ public class Asistencia {
 	public void setFechSalidaAsist(String fechSalidaAsist) {
 		this.fechSalidaAsist = fechSalidaAsist;
 	}
+	@Override
 	
+	//TOSTRING
+	
+	public String toString() {
+		return "Asistencia [idAsist=" + idAsist + ", dniUser=" + dniUser + ", fechEntradaAsist=" + fechEntradaAsist
+				+ ", fechSalidaAsist=" + fechSalidaAsist + "]";
+	}
+	
+	//CONSTRUCTOR
+	
+	public Asistencia(String idAsist, int dniUser, String fechEntradaAsist, String fechSalidaAsist) {
+		super();
+		this.idAsist = idAsist;
+		this.dniUser = dniUser;
+		this.fechEntradaAsist = fechEntradaAsist;
+		this.fechSalidaAsist = fechSalidaAsist;
+	}
 }

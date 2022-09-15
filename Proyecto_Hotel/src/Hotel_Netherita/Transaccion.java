@@ -48,5 +48,26 @@ public class Transaccion {
 		this.totalTransac = totalTransac;
 	}
 	
+	//TOSTRING
 	
+	@Override
+	public String toString() {
+		return "Transaccion [idTransac=" + idTransac + ", idReser=" + idReser + ", idPago=" + idPago + ", totalTransac="
+				+ totalTransac + ", pago=" + pago + "]";
+	}
+	
+	//CONSTRUCTOR
+	
+	public Transaccion(String idTransac, String idReser, String idPago, double totalTransac, List<Pago> pago) {
+		super();
+		this.idTransac = idTransac;
+		this.idReser = idReser;
+		this.idPago = idPago;
+		this.totalTransac = totalTransac;
+		this.pago = pago;
+	}
+	public void imprimir() {
+		// TODO Auto-generated method stub
+		
+	}
 }

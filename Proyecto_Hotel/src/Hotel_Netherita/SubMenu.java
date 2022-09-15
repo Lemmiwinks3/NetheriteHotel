@@ -22,5 +22,12 @@ public class SubMenu {
 		this.nomMenu = nomMenu;
 	}
 	
+	//TOSTRING
+	
+	@Override
+	public String toString() {
+		return "SubMenu [IdMenu=" + IdMenu + ", nomMenu=" + nomMenu + "]";
+	}
+	
 }
 

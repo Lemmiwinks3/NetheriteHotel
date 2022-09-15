@@ -22,12 +22,19 @@ public class Piso extends Habitacion{
 		this.numPiso = numPiso;
 	}
 	
+	//TOSTRING
+	
+	@Override
+	public String toString() {
+		return "Piso [idPiso=" + idPiso + ", numPiso=" + numPiso + "]";
+		
+		
+	}
+	
 	//CONSTRUCTOR
 	
-	public Piso(String idHabi, int numHabi, String idCateg, String idPiso, String idEst, String idPiso2,
-			String numPiso) {
+	public Piso(String idHabi, int numHabi, String idCateg, String idPiso, String idEst) {
 		super(idHabi, numHabi, idCateg, idPiso, idEst);
-		idPiso = idPiso2;
-		this.numPiso = numPiso;
+		// TODO Auto-generated constructor stub
 	}
 }

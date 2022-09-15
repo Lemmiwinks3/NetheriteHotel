@@ -36,5 +36,22 @@ public class Permiso {
 		this.activoPerm = activoPerm;
 	}
 	
+	//TOSTRING
 	
+	@Override
+	public String toString() {
+		return "Permiso [idPerm=" + idPerm + ", idRol=" + idRol + ", idOper=" + idOper + ", activoPerm=" + activoPerm
+				+ "]";
+	}
+	
+	//CONSTRUCTOR
+	
+	public Permiso(String idPerm, String idRol, String idOper, String activoPerm) {
+		super();
+		this.idPerm = idPerm;
+		this.idRol = idRol;
+		this.idOper = idOper;
+		this.activoPerm = activoPerm;
+	}
 }
+

@@ -36,5 +36,23 @@ public class Categoria {
 		this.precCateg = precCateg;
 	}
 	
+	// TOSTRING 
 	
+	@Override
+	public String toString() {
+		return "Categoria [idCateg=" + idCateg + ", nomCateg=" + nomCateg + ", descripCateg=" + descripCateg
+				+ ", precCateg=" + precCateg + ", getIdCateg()=" + getIdCateg() + ", getNomCateg()=" + getNomCateg()
+				+ ", getDescripCateg()=" + getDescripCateg() + ", getPrecCateg()=" + getPrecCateg() + ", getClass()="
+				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	}
+	
+	//CONSTRUCTOR
+	
+	public Categoria(String idCateg, String nomCateg, String descripCateg, String precCateg) {
+		super();
+		this.idCateg = idCateg;
+		this.nomCateg = nomCateg;
+		this.descripCateg = descripCateg;
+		this.precCateg = precCateg;
+	}
 }
